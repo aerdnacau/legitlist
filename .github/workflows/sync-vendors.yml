@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate vendor data
+        run: node scripts/validate-all.mjs
+
       - name: Sync vendors to Framer
         run: node scripts/sync-to-framer.mjs
         env:

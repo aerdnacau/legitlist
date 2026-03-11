@@ -22,7 +22,7 @@ jobs:
           node-version: 22
 
       - name: Install validators
-        run: npm install -g ajv-cli ajv-formats
+        run: npm install -g ajv-cli@5.0.0 ajv-formats@3.0.1
 
       - name: Validate each vendor JSON
         run: |
