@@ -46,7 +46,7 @@
       "type": "string",
       "minLength": 2,
       "maxLength": 60,
-      "description": "Country name written in full (e.g. 'Italy', 'Germany', 'Australia')"
+      "description": "Country name (full name preferred, e.g. 'Italy', 'Germany', 'Australia'; common abbreviations like 'USA' are also accepted)"
     },
     "logo": {
       "type": "string",

@@ -201,8 +201,33 @@ async function main() {
     await collection.addItems(items) // addItems performs an upsert by id
 
     // ── Publish & deploy ──────────────────────────────────────────────────
+    const changedPaths = await framer.getChangedPaths()
+    const changedCount =
+      changedPaths.added.length +
+      changedPaths.removed.length +
+      changedPaths.modified.length
+
+    if (changedCount === 0) {
+      console.log("ℹ️  No changed paths since last publish — skipping publish/deploy")
+      return
+    }
+
+    console.log(
+      `🧭 Changed paths — added: ${changedPaths.added.length}, removed: ${changedPaths.removed.length}, modified: ${changedPaths.modified.length}`
+    )
     console.log("🚀 Publishing…")
-    const { deployment } = await withRetry("Publish", () => framer.publish())
+
+    let deployment
+    try {
+      ;({ deployment } = await withRetry("Publish", () => framer.publish()))
+    } catch (err) {
+      console.error("❌ Publish failed with pending changes still present")
+      console.error(
+        `🧭 Pending paths — added: ${changedPaths.added.length}, removed: ${changedPaths.removed.length}, modified: ${changedPaths.modified.length}`
+      )
+      throw err
+    }
+
     console.log(`🌐 Deploying (id: ${deployment.id})…`)
     await withRetry("Deploy", () => framer.deploy(deployment.id))
 

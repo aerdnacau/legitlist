@@ -113,13 +113,15 @@ Use this title:
 
 `Add vendor: Your Shop Name`
 
-GitHub will show you a form with a few questions about your shop.
+GitHub will show you a short form with checkboxes and a few questions.
 
-Fill in the basic details you know:
+Complete these sections:
+- pick what this PR is (new listing, update, or removal)
 - your shop name
 - your website
 - your region
 - where people can find you in the community
+- vendor checklist
 
 Then click **Create pull request**.
 
