@@ -25,7 +25,14 @@ New to the community? That's fine — but expect the review to take longer while
 
 ### 1. Fork this repo
 
-Go to the **[README](README.md)** and click **[Fork this repo](https://github.com/bitaxeorg/legitlist/fork)**.
+Open this page directly:
+
+**https://github.com/bitaxeorg/legitlist/fork**
+
+Visual path on GitHub:
+1. Open `github.com/bitaxeorg/legitlist`
+2. Top-right, click **Fork**
+3. Click **Create fork**
 
 Quick answers:
 - **Do I need to rename the fork?** No — keep the default name.
