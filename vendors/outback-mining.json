@@ -1,0 +1,15 @@
+{
+  "name": "Outback Mining",
+  "slug": "outback-mining",
+  "website": "https://outbackmining.com.au",
+  "region": "Asia Pacific",
+  "country": "Australia",
+  "logo": "logos/outback-mining.png",
+  "description": "Australian Bitaxe reseller. Ships to AU and NZ with local warranty support.",
+  "active": true,
+  "social": {
+    "x": "",
+    "instagram": "https://instagram.com/outbackmining",
+    "youtube": ""
+  }
+}

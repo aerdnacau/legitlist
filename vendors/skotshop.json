@@ -1,0 +1,15 @@
+{
+  "name": "Skotshop",
+  "slug": "skotshop",
+  "website": "https://skotshop.com",
+  "region": "Europe",
+  "country": "Sweden",
+  "logo": "logos/skotshop.png",
+  "description": "Nordic Bitaxe reseller. Ships to Sweden, Norway, Denmark and Finland.",
+  "active": true,
+  "social": {
+    "x": "https://x.com/skotshop",
+    "instagram": "",
+    "youtube": ""
+  }
+}

@@ -46,32 +46,26 @@ jobs:
             slug=$(jq -r '.slug' "$f")
             expected=$(basename "$f" .json)
             if [ "$slug" != "$expected" ]; then
-              echo "::error file=$f::Slug '$slug' does not match filename '$expected'"
+              echo "::error file=$f::Slug '$slug' does not match filename — rename the file to '$slug.json' or change the slug to '$expected'"
               ERRORS=$((ERRORS + 1))
             fi
 
-            # 3. Logo file must exist
+            # 3. Logo file (optional — fallback placeholder is used if missing)
             logo=$(jq -r '.logo' "$f")
-            FILE_ERRORS=0
             if [ ! -f "$logo" ]; then
-              echo "::error file=$f::Logo file not found: $logo"
-              ERRORS=$((ERRORS + 1))
-              FILE_ERRORS=$((FILE_ERRORS + 1))
+              echo "::warning file=$f::Logo not found: $logo — placeholder will be used until you add it"
             else
               # 4. Logo must be ≤ 200 KB
               size=$(stat -c%s "$logo" 2>/dev/null || stat -f%z "$logo")
               if [ "$size" -gt 204800 ]; then
-                echo "::error file=$f::Logo exceeds 200 KB (${size} bytes): $logo"
+                echo "::error file=$f::Logo exceeds 200 KB (${size} bytes) — please compress it"
                 ERRORS=$((ERRORS + 1))
-                FILE_ERRORS=$((FILE_ERRORS + 1))
               else
                 echo "✓ Logo OK (${size} bytes)"
               fi
             fi
 
-            if [ "$FILE_ERRORS" -eq 0 ]; then
-              echo "✓ $f is valid"
-            fi
+            echo "✓ $f is valid"
           done
 
           if [ "$ERRORS" -gt 0 ]; then

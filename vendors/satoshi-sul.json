@@ -1,0 +1,15 @@
+{
+  "name": "Satoshi Sul",
+  "slug": "satoshi-sul",
+  "website": "https://satoshisul.com.br",
+  "region": "South America",
+  "country": "Brazil",
+  "logo": "logos/satoshi-sul.png",
+  "description": "Maior revendedor Bitaxe do Brasil. Entrega para todo o territ\u00f3rio nacional.",
+  "active": true,
+  "social": {
+    "x": "https://x.com/satoshisul",
+    "instagram": "https://instagram.com/satoshisul",
+    "youtube": ""
+  }
+}

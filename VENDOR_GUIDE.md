@@ -31,7 +31,7 @@ Go to **[bitaxeorg/legitlist on GitHub](https://github.com/bitaxeorg/legitlist)*
 
 **`vendors/{your-slug}.json`**
 
-The slug is your unique identifier — lowercase letters, numbers, and hyphens only. Example: `pivotal-mining`.
+The slug is your unique identifier — use letters, numbers, hyphens or underscores. Example: `pivotal-mining` or `pivotal_mining`.
 
 Copy `vendors/_example.json` and fill it in:
 

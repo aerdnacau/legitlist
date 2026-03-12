@@ -1,0 +1,15 @@
+{
+  "name": "Maple Hash",
+  "slug": "maple-hash",
+  "website": "https://maplehash.ca",
+  "region": "North America",
+  "country": "Canada",
+  "logo": "logos/maple-hash.png",
+  "description": "Canada's dedicated Bitaxe store. Ships from Toronto, duties-included pricing.",
+  "active": true,
+  "social": {
+    "x": "https://x.com/maplehash",
+    "instagram": "",
+    "youtube": "https://youtube.com/@maplehash"
+  }
+}

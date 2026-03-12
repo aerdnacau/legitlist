@@ -1,0 +1,15 @@
+{
+  "name": "Desert Miners",
+  "slug": "desert-miners",
+  "website": "https://desertminers.ae",
+  "region": "Middle East",
+  "country": "UAE",
+  "logo": "logos/desert-miners.png",
+  "description": "Bitaxe hardware for the Gulf region. Stocked in Dubai, ships GCC-wide.",
+  "active": true,
+  "social": {
+    "x": "https://x.com/desertminers",
+    "instagram": "https://instagram.com/desertminers",
+    "youtube": ""
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Bitcraft Europe",
+  "slug": "bitcraft-europe",
+  "website": "https://bitcraft.eu",
+  "region": "Europe",
+  "country": "Germany",
+  "logo": "logos/bitcraft-europe.png",
+  "description": "Bitaxe hardware and accessories shipped across the EU with same-week dispatch.",
+  "active": true,
+  "social": {
+    "x": "https://x.com/bitcrafteu",
+    "instagram": "https://instagram.com/bitcrafteu",
+    "youtube": ""
+  }
+}

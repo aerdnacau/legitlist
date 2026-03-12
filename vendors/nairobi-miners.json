@@ -1,0 +1,15 @@
+{
+  "name": "Nairobi Miners",
+  "slug": "nairobi-miners",
+  "website": "https://nairobimimers.co.ke",
+  "region": "Africa",
+  "country": "Kenya",
+  "logo": "logos/nairobi-miners.png",
+  "description": "East Africa's first Bitaxe reseller. Ships across Kenya, Uganda and Tanzania.",
+  "active": true,
+  "social": {
+    "x": "https://x.com/nairobimimers",
+    "instagram": "",
+    "youtube": ""
+  }
+}

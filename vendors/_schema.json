@@ -21,8 +21,8 @@
     },
     "slug": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
-      "description": "URL-safe identifier, must match filename (e.g. 'pivotal-mining')"
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "description": "URL-safe identifier, must match filename \u2014 letters, numbers, hyphens, underscores (e.g. \"pivotal-mining\" or \"pivotal_mining\")"
     },
     "website": {
       "type": "string",

@@ -1,0 +1,15 @@
+{
+  "name": "Hashnode Asia",
+  "slug": "hashnode-asia",
+  "website": "https://hashnodeasia.com",
+  "region": "Asia Pacific",
+  "country": "Singapore",
+  "logo": "logos/hashnode-asia.png",
+  "description": "Singapore-based Bitaxe reseller covering Southeast Asia. Fast local delivery.",
+  "active": true,
+  "social": {
+    "x": "",
+    "instagram": "https://instagram.com/hashnodeasia",
+    "youtube": ""
+  }
+}
