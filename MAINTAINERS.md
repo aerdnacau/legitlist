@@ -23,7 +23,7 @@ legitlist/
 │   ├── _example.json         # Template — skipped by sync (filename starts with _)
 │   └── {slug}.json           # One file per vendor
 ├── logos/
-│   └── {slug}.{ext}          # Square, max 200 KB — png, jpg, webp
+│   └── {slug}.{ext}          # Square 400×400px, max 200 KB — png, jpg, webp
 ├── scripts/
 │   ├── sync-to-framer.mjs    # Syncs vendors to Framer CMS on merge
 │   └── validate-all.mjs      # Local validation script
@@ -62,7 +62,7 @@ This creates the Managed Collection in Framer with all fields. Only needs to be 
 ## ➕ Adding or updating a vendor
 
 1. Create `vendors/{slug}.json` — copy from `vendors/_example.json`
-2. Add logo at `logos/{slug}.{ext}` (square, max 200 KB — png, jpg, webp)
+2. Add logo at `logos/{slug}.{ext}` (square 400×400px recommended, max 200 KB — png, jpg, webp)
 3. Open a PR — CI validates automatically
 4. Merge → sync and deploy run automatically
 

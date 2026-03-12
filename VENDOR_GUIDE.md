@@ -60,9 +60,9 @@ A few notes:
 
 Valid regions: `Europe` · `North America` · `South America` · `Asia Pacific` · `Middle East` · `Africa` · `India`
 
-**`logos/{your-slug}.png`**
+**`logos/{your-slug}.png`** (or .jpg / .webp)
 
-Square. PNG, JPG, or WebP. Max **200 KB**.
+Square, **400×400px recommended**. PNG, JPG, or WebP. Max **200 KB**.
 
 No logo yet? Submit your PR anyway — a placeholder will be shown until you add one.
 

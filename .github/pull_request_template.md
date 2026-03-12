@@ -34,7 +34,7 @@ _Fill this in yourself. The community will verify during review._
 _Double-check before submitting:_
 
 - [ ] JSON is at `vendors/{slug}.json` and the `slug` field matches the filename exactly
-- [ ] Logo is at `logos/{slug}.{ext}` (png, jpg, or webp), square, max 200 KB
+- [ ] Logo is at `logos/{slug}.{ext}` (png, jpg, or webp), square 400×400px recommended, max 200 KB
 
 ---
 
