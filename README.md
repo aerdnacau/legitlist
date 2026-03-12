@@ -45,7 +45,7 @@ Each vendor is two files:
 | File | What |
 |---|---|
 | `vendors/{slug}.json` | Your shop info — name, website, region, socials |
-| `logos/{slug}.png` | Your logo — square, max 200 KB |
+| `logos/{slug}.{ext}` | Your logo — square 400×400px recommended, max 200 KB (png, jpg, webp) |
 
 Check `vendors/_example.json` for the template.
 
